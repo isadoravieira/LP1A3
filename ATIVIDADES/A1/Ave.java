@@ -14,16 +14,17 @@ public class Ave extends Animal {
         System.out.println("~~som de ave~~");
     }
 
-    public void status(){
-        System.out.println("AVE: ");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("idade: " + this.idade + " anos");
-        System.out.println("Espécie: " + this.especie);
-        System.out.println("Alimentado: " + this.alimentado);
-        System.out.println("Tempos de Gestação: " + this.tipoBico);
-    }
-
     public void alimentar(){
         this.alimentado = true;
     }
+
+    public String getTipoBico() {
+        return tipoBico;
+    }
+
+    public void setTipoBico(String tipoBico) {
+        this.tipoBico = tipoBico;
+    }
+
+    
 }

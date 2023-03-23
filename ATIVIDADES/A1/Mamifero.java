@@ -14,17 +14,18 @@ public class Mamifero extends Animal{
         System.out.println("~~som de mamífero~~");
     }
 
-        
-    public void status(){
-        System.out.println("MAMÍFERO: ");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("idade: " + this.idade + " anos");
-        System.out.println("Espécie: " + this.especie);
-        System.out.println("Alimentado: " + this.alimentado);
-        System.out.println("Tempos de Gestação: " + this.tempoGestacao + " dias");
-    }
-
+    
     public void alimentar(){
         this.alimentado = true;
     }
+
+    public int getTempoGestacao() {
+        return tempoGestacao;
+    }
+
+    public void setTempoGestacao(int tempoGestacao) {
+        this.tempoGestacao = tempoGestacao;
+    }
+
+  
 }

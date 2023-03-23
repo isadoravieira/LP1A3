@@ -14,16 +14,18 @@ public class Reptil extends Animal {
         System.out.println("~~som de réptil~~");
     }
 
-    public void status(){
-        System.out.println("RÉPTIL: ");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("idade: " + this.idade + " anos");
-        System.out.println("Espécie: " + this.especie);
-        System.out.println("Alimentado: " + this.alimentado);
-        System.out.println("Tempos de Gestação: " + this.temperaturaCorporal + " ºC");
-    }
-    
+        
     public void alimentar(){
         this.alimentado = true;
     }
+
+    public double getTemperaturaCorporal() {
+        return temperaturaCorporal;
+    }
+
+    public void setTemperaturaCorporal(double temperaturaCorporal) {
+        this.temperaturaCorporal = temperaturaCorporal;
+    }
+
+    
 }
